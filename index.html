@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TABAEEN Website</title>
+  <style>
+    :root {
+      --main-bg: #f9fafc;
+      --primary: #26547c;
+      --accent: #ef476f;
+      --text: #222;
+      --nav-bg: #fff;
+      --shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: var(--main-bg);
+      color: var(--text);
+    }
+    header {
+      background: var(--nav-bg);
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+    }
+    nav .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: var(--primary);
+      letter-spacing: 2px;
+      text-decoration: none;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    nav ul li a:hover {
+      color: var(--accent);
+    }
+    .hero {
+      text-align: center;
+      padding: 5rem 2rem 3rem 2rem;
+      background: linear-gradient(90deg, #e0eafc 0%, #cfdef3 100%);
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin: 0 0 1rem 0;
+      color: var(--primary);
+    }
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      color: #444;
+    }
+    .hero .cta {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      padding: 0.8rem 2rem;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      text-decoration: none;
+      transition: background 0.2s;
+      box-shadow: var(--shadow);
+    }
+    .hero .cta:hover {
+      background: var(--accent);
+    }
+    main {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    section {
+      flex: 1 1 300px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      padding: 2rem;
+      min-width: 270px;
+    }
+    section h2 {
+      color: var(--primary);
+      margin-top: 0;
+    }
+    footer {
+      background: var(--nav-bg);
+      text-align: center;
+      padding: 1.5rem 2rem;
+      color: #666;
+      margin-top: 3rem;
+      font-size: 0.96rem;
+      box-shadow: 0 -1px 8px rgba(0,0,0,0.03);
+    }
+    @media (max-width: 700px) {
+      main {
+        flex-direction: column;
+        padding: 0 1rem;
+      }
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#" class="logo">TABAEEN</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="hero">
+    <h1>Welcome to TABAEEN</h1>
+    <p>Your one-stop solution for modern, responsive websites.<br>
+       Easily customizable and ready to launch!</p>
+    <a href="#contact" class="cta">Get Started</a>
+  </div>
+  <main>
+    <section id="about">
+      <h2>About TABAEEN</h2>
+      <p>This is a sample website template. You can edit this section to introduce your business, project, or personal brand. Add images, links, and more to make it your own.</p>
+    </section>
+    <section id="features">
+      <h2>Features</h2>
+      <ul>
+        <li>Fully responsive design</li>
+        <li>Easy to customize</li>
+        <li>Clean and modern look</li>
+        <li>Fast loading and accessible</li>
+        <li>Ready for deployment</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Need help or want to work with us? Email: <a href="mailto:info@tabaeen.com">info@tabaeen.com</a></p>
+      <!-- Add a contact form or social links as needed -->
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 TABAEEN. All rights reserved.
+  </footer>
+</body>
+</html>
